@@ -15,13 +15,13 @@ export default function Navbar(){
 
            <ul className="flex flex-row gap-6 font-normal">
               <li>
-                <Link href="/" className="text-gray-700 font-semibold">Courses</Link>
+                <Link href="/" className="text-gray-700 font-semibold">COURSES</Link>
               </li>
               <li>
-                <Link href="/" className="text-gray-700 font-semibold">Books</Link>
+                <Link href="/" className="text-gray-700 font-semibold">BOOKS</Link>
               </li>
               <li>
-                <Link href="/" className="text-gray-700 font-semibold">Download Our App</Link>
+                <Link href="/" className="text-gray-700 font-semibold flex flex-row"><span className="hidden md:block">DOWNLOAD OUR &nbsp;</span> APP</Link>
               </li>
             </ul>
 

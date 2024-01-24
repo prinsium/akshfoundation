@@ -11,10 +11,10 @@ export default function FAQs() {
   };
 
   return (
-    <div className="max-w-5xl mx-auto my-4 mb-16">
+    <div className="max-w-5xl mx-auto mt-24 mb-16">
       <h2 className='text-4xl font-bold text-gray-800 flex justify-center mb-4'>FAQs</h2>
       {faqData.map((faq, index) => (
-        <div key={faq.id} className="p-3 mb-1 mx-2 bg-gray-600 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10">
+        <div key={faq.id} className="p-6 mb-1 mx-2 bg-gray-100 rounded-lg border-2 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10">
           {/* Question */}
           <div
             className="flex items-center justify-between cursor-pointer"

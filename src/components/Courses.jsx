@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Courses(){
     return(
-        <div className="flex flex-row gap-4">
+        <div className="flex flex-row flex-wrap justify-center mx-auto mt-24 gap-4">
 
             <div className="flex flex-col bg-gray-700 w-fit h-fit rounded-xl p-3 gap-4 justify-between">
                 <Image className="rounded-lg" src="/assets/bank.jpg" width={400} height={225} />
