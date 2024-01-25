@@ -20,9 +20,10 @@ export default function FAQs() {
             className="flex items-center justify-between cursor-pointer"
             onClick={() => toggleAccordion(index)}
           >
-            <h3 className="mb-2 text-xl text-gray-700 font-medium">{faq.question}</h3>
+            <h3 className="mb-2 text-lg text-gray-700 font-medium">{faq.question}</h3>
+            <div className='w-8 h-8 flex justify-end'>
             <svg
-              className={`w-6 h-6 transition-transform transform ${activeIndex === index ? 'rotate-45' : 'rotate-0'
+              className={`w-5 h-5 transition-transform transform ${activeIndex === index ? 'rotate-45' : 'rotate-0'
                 }`}
               fill="none"
               stroke="#334155"
@@ -37,6 +38,7 @@ export default function FAQs() {
               ></path>
 
             </svg>
+            </div>
           </div>
 
           {/* Answer */}

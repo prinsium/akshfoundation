@@ -30,11 +30,12 @@ export default function Testimonials() {
 
   return (
     <div className="max-w-5xl mx-auto mt-24">
+      <h2 className='text-4xl font-bold text-gray-800 flex justify-center mb-4'>Hear Us Loud</h2>
       <div className="py-8 bg-gray-100 rounded-xl border-2 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10">
         <div className="overflow-hidden flex flex-row gap-12 my-4">
           {items.map((testimonial, index) => (
             <div key={index} className="inline-block animate-marquee">
-              <div className="flex flex-col justify-between p-6 w-96 h-96 bg-gray-100 shadow-lg rounded-2xl">
+              <div className="flex flex-col justify-between p-6 w-72 h-80 md:w-96 md:h-96 bg-gray-100 shadow-lg rounded-2xl">
 
                 {/* star rating */}
 

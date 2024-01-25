@@ -70,7 +70,7 @@ dark:shadow-blue-800/80 font-medium rounded-2xl text-sm px-5 py-2.5 text-center 
                 <div className="max-w-7xl flex justify-center mx-auto mt-24">
             <div className="flex flex-col justify-center items-center gap-6">
                 <div>
-                    <h3 className="text-gray-700 text-3xl font-semibold text-center">Anuvad Abhyaas</h3>
+                    <h3 className="text-gray-700 text-2xl font-extrbold text-center">Anuvad Abhyaas</h3>
                 </div>
                 <div className="flex flex-col bg-gray-700 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 w-fit h-fit rounded-xl p-3 gap-4 justify-between">
                     <Image className="rounded-lg" src="/assets/book1.png" width={400} height={400} />

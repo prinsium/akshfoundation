@@ -35,8 +35,8 @@ export default function App(){
   return(
     <div className="max-w-7xl mx-auto mt-24">
         <div>
-            <h3 className="text-gray-700 text-6xl font-semibold text-center">Download Our Mobile App</h3>
-            <p className="text-gray-600 text-xl font-normal text-center">Learning Aksh App for exam prepration</p>
+            <h3 className="text-gray-800 text-4xl font-bold text-center">Download Our Mobile App</h3>
+            <p className="text-gray-700 text-xl font-normal text-center">Learning Aksh App for exam prepration</p>
         </div>
     <div className="flex flex-row justify-between">
     <Lottie animationData={arrow} style={style} interactivity={interactivity} />
