@@ -40,7 +40,7 @@ export default function Navbar() {
             onClick={() => scrollToSection("homepage")}
             className="flex justify-start items-center cursor-pointer"
           >
-            <div className="text-gray-800 text-lg font-semibold">
+            <div className="text-gray-300 text-lg font-semibold">
               <Image src="/assets/aksh.svg" width={200} height={40} alt="aksh"/>
             </div>
           </div>
@@ -50,7 +50,7 @@ export default function Navbar() {
             <li>
               <div
                 onClick={() => scrollToSection("courses")}
-                className="text-gray-700 font-semibold cursor-pointer"
+                className="text-gray-800 font-semibold cursor-pointer"
               >
                 COURSES
               </div>
@@ -58,7 +58,7 @@ export default function Navbar() {
             <li>
               <div
                 onClick={() => scrollToSection("books")}
-                className="text-gray-700 font-semibold cursor-pointer"
+                className="text-gray-800 font-semibold cursor-pointer"
               >
                 BOOKS
               </div>
@@ -66,7 +66,7 @@ export default function Navbar() {
             <li>
               <div
                 onClick={() => scrollToSection("app")}
-                className="text-gray-700 font-semibold flex flex-row cursor-pointer"
+                className="text-gray-800 font-semibold flex flex-row cursor-pointer"
               >
                 <span className="hidden md:block">DOWNLOAD OUR &nbsp;</span> APP
               </div>
@@ -88,11 +88,11 @@ export default function Navbar() {
               </button>
               <Modal isOpen={isModalOpen} onClose={closeModal}>
 
-              <ul className="flex flex-row gap-6 font-normal">
+              <ul className="flex flex-row justify-end gap-6 font-normal">
             <li>
               <div
                 onClick={() => scrollToSection("courses")}
-                className="text-gray-700 font-semibold cursor-pointer"
+                className="text-gray-900 bg-slate-200 py-1 px-2.5 rounded-xl font-semibold cursor-pointer"
               >
                 COURSES
               </div>
@@ -100,7 +100,7 @@ export default function Navbar() {
             <li>
               <div
                 onClick={() => scrollToSection("books")}
-                className="text-gray-700 font-semibold cursor-pointer"
+                className="text-gray-900 bg-slate-200 py-1 px-2.5 rounded-xl font-semibold cursor-pointer"
               >
                 BOOKS
               </div>
@@ -108,7 +108,7 @@ export default function Navbar() {
             <li>
               <div
                 onClick={() => scrollToSection("app")}
-                className="text-gray-700 font-semibold flex flex-row cursor-pointer"
+                className="text-gray-900 bg-slate-200 py-1 px-2.5 rounded-xl font-semibold flex flex-row cursor-pointer"
               >
                 <span className="hidden md:block">DOWNLOAD OUR &nbsp;</span> APP
               </div>
