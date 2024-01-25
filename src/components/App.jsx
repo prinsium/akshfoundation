@@ -71,7 +71,7 @@ export default function App() {
 
       <div className="flex justify-center items-center">
         <div className={`w-fit h-fit flex justify-center items-center transition ease-in-out delay-150 ${isZoomed ? 'transition duration-700 scale-125' : 'scale-0'}`} ref={ref}>
-          <Image src="/assets/APPimg.png" width={300} height={300} />
+          <Image src="/assets/APPimg.png" width={300} height={300} alt="APP" />
         </div>
       </div>
 

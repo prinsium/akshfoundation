@@ -63,7 +63,7 @@ export default function App() {
                     </div>
 
                     <div className="w-2/5 h-full bg-gray-100 rounded-xl border-2 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 flex justify-center items-center">
-                        <Image src="/assets/book2.png" width={400} height={400} />
+                        <Image src="/assets/book2.png" width={400} height={400} alt="BOOK" />
                     </div>
 
                 </div>
@@ -79,7 +79,7 @@ export default function App() {
                             <h3 className="text-gray-700 text-2xl font-extrbold text-center">Anuvad Abhyaas</h3>
                         </div>
                         <div className="flex flex-col bg-gray-700 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 w-fit h-fit rounded-xl p-3 gap-4 justify-between">
-                            <Image className="rounded-lg" src="/assets/book1.png" width={400} height={400} />
+                            <Image className="rounded-lg" src="/assets/book1.png" width={400} height={400} alt="BOOK" />
                             <div className="flex flex-col gap-4">
                                 <h6 className="text-gray-700">{booksData.title}</h6>
                                 <p className="text-gray-700">{booksData.desc}</p>

@@ -72,26 +72,6 @@ export default function HomePage() {
   };
 
   return (
-    // <div className="h-screen">
-
-    //     <div className="hidden md:block">
-    //     <div className="w-full h-full flex flex-col justify-center items-center">
-    //     <h1 className="text-gray-800 text-5xl lg:text-5xl md:text-7xl text-8xl 2xl:text-9xl font-bold lg:font-extrabold text-center">CREATING NEW</h1>
-    //     <h1 className="text-gray-800 text-5xl lg:text-5xl md:text-7xl text-8xl 2xl:text-9xl font-bold lg:font-extrabold text-center">EXPERIENCE WITH</h1>
-    //     <h1 className="text-gray-800 text-5xl lg:text-5xl md:text-7xl text-8xl 2xl:text-9xl font-bold lg:font-extrabold text-center">WAYS OF</h1>
-    //     <h1 className="text-gray-800 text-5xl lg:text-5xl md:text-7xl text-8xl 2xl:text-9xl font-bold lg:font-extrabold text-center">PERFECT LEARNING</h1>
-    //     </div>
-    //     </div>
-
-    //     <div className="block md:hidden">
-    //     <div className="w-full h-screen flex flex-col justify-center items-center">
-    //     <h1 className="text-gray-800 text-4xl font-extrabold">CREATING NEW</h1>
-    //     <h1 className="text-gray-800 text-4xl font-extrabold">EXPERIENCE</h1>
-    //     <h1 className="text-gray-800 text-4xl font-extrabold">WITH WAYS OF</h1>
-    //     <h1 className="text-gray-800 text-4xl font-extrabold">PERFECT LEARNING</h1>
-    //     </div>
-    //     </div>
-    // </div>
 
     <div className={`mt-24 lg:mt-0 lg:h-screen flex ${isWideScreen ? 'flex-row justify-evenly' : 'flex-col justify-start'}`}>
 

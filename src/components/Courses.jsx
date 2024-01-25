@@ -61,7 +61,7 @@ export default function Courses() {
 
           <div className={`w-full flex flex-col bg-[#2A2F4F] rounded-xl p-3 justify-between ${isWideScreen ? 'min-h-[30vh] max-h-[70vh]' : 'h-[46h]'}`}>
             <div className='flex flex-col gap-6'>
-              <Image className="rounded-lg" src="/assets/bank.jpg" width={1000} height={1000} />
+              <Image className="rounded-lg" src="/assets/bank.jpg" width={1000} height={1000} alt="course" />
               <div className="h-full flex flex-row justify-between">
                 <h6>{courseData.course1}</h6>
                 <p>Mode: {courseData.mode1}</p>
@@ -90,7 +90,7 @@ export default function Courses() {
 
           <div className={`w-full flex flex-col bg-[#2A2F4F] rounded-xl p-3 justify-between ${isWideScreen ? 'min-h-[30vh] max-h-[70vh]' : 'h-[46h]'}`}>
             <div className='flex flex-col gap-6'>
-              <Image className="rounded-lg" src="/assets/bank.jpg" width={1000} height={1000} />
+              <Image className="rounded-lg" src="/assets/bank.jpg" width={1000} height={1000} alt="course" />
               <div className="h-full flex flex-row justify-between">
                 <h6>{courseData.course1}</h6>
                 <p>Mode: {courseData.mode1}</p>
@@ -122,7 +122,7 @@ export default function Courses() {
 
           <div className={`w-full flex flex-col bg-[#2A2F4F] rounded-xl p-3 justify-between ${isWideScreen ? 'min-h-[30vh] max-h-[70vh]' : 'h-[46h]'}`}>
             <div className='flex flex-col gap-6'>
-              <Image className="rounded-lg" src="/assets/bank.jpg" width={1000} height={1000} />
+              <Image className="rounded-lg" src="/assets/bank.jpg" width={1000} height={1000} alt="course" />
               <div className="h-full flex flex-row justify-between">
                 <h6>{courseData.course1}</h6>
                 <p>Mode: {courseData.mode1}</p>
@@ -150,7 +150,7 @@ export default function Courses() {
 
           <div className={`w-full flex flex-col bg-[#2A2F4F] rounded-xl p-3 justify-between ${isWideScreen ? 'min-h-[30vh] max-h-[70vh]' : 'h-[46h]'}`}>
             <div className='flex flex-col gap-6'>
-              <Image className="rounded-lg" src="/assets/bank.jpg" width={1000} height={1000} />
+              <Image className="rounded-lg" src="/assets/bank.jpg" width={1000} height={1000} alt="course" />
               <div className="h-full flex flex-row justify-between">
                 <h6>{courseData.course1}</h6>
                 <p>Mode: {courseData.mode1}</p>
