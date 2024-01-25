@@ -1,10 +1,12 @@
 "use client";
 
-
 import React from "react";
 import Lottie from "lottie-react";
 import books from "./Lottie/books.json";
 import Image from "next/image";
+
+import { booksData } from "@/data/booksData";
+import Link from "next/link";
 
 export default function App() {
 
@@ -36,22 +38,26 @@ export default function App() {
     return (
         <div className="max-w-7xl mx-auto mt-24">
 
-{/* this will be visible in larger screens */}
+            {/* this will be visible in larger screens */}
 
             <div className="hidden lg:block">
                 <div className="flex flex-row justify-between">
 
                     <div className="flex flex-col justify-between">
                         <div>
-                            <h3 className="text-gray-700 text-6xl font-semibold text-center">'Anuvad Abhyaas'</h3>
-                            <p className="text-gray-600 text-xl font-normal text-center">Translation Practice Book by AKSH Foundation</p>
+                            <h3 className="text-gray-800 text-4xl font-extrabold text-center">'{booksData.title}'</h3>
+                            <p className="text-gray-700 text-xl font-normal text-center">{booksData.desc}</p>
                         </div>
                         <div>
                             <Lottie animationData={books} style={style} interactivity={interactivity} />
                             <div className="flex justify-center items-center">
-                                <button type="button" class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br 
-focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg 
-dark:shadow-blue-800/80 font-medium rounded-2xl text-sm px-5 py-2.5 text-center me-2 mb-2 ">Preorder Now</button>
+                                {booksData.link && (
+                                    <Link href={booksData.link} target='_blank' rel='noreferrer' >
+                                        <button type="button" class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br 
+                                        focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg 
+                                        dark:shadow-blue-800/80 font-medium rounded-2xl text-md px-5 py-2.5 text-center me-2 mb-2 ">Preorder Now</button>
+                                    </Link>
+                                )}
                             </div>
                         </div>
                     </div>
@@ -68,25 +74,27 @@ dark:shadow-blue-800/80 font-medium rounded-2xl text-sm px-5 py-2.5 text-center 
             <div className="block lg:hidden">
 
                 <div className="max-w-7xl flex justify-center mx-auto mt-24">
-            <div className="flex flex-col justify-center items-center gap-6">
-                <div>
-                    <h3 className="text-gray-700 text-2xl font-extrbold text-center">Anuvad Abhyaas</h3>
-                </div>
-                <div className="flex flex-col bg-gray-700 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 w-fit h-fit rounded-xl p-3 gap-4 justify-between">
-                    <Image className="rounded-lg" src="/assets/book1.png" width={400} height={400} />
-                    <div className="flex flex-col gap-4">
-                        <h6 className="text-gray-700">ANUVAD ABHYAAS</h6>
-                        <p className="text-gray-700">Translation Practice Book by AKSH Foundation</p>
+                    <div className="flex flex-col justify-center items-center gap-6">
+                        <div>
+                            <h3 className="text-gray-700 text-2xl font-extrbold text-center">Anuvad Abhyaas</h3>
+                        </div>
+                        <div className="flex flex-col bg-gray-700 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 w-fit h-fit rounded-xl p-3 gap-4 justify-between">
+                            <Image className="rounded-lg" src="/assets/book1.png" width={400} height={400} />
+                            <div className="flex flex-col gap-4">
+                                <h6 className="text-gray-700">{booksData.title}</h6>
+                                <p className="text-gray-700">{booksData.desc}</p>
+                            </div>
+                            <div className="w-full">
+                                {booksData.link && (
+                                    <Link href={booksData.link} target='_blank' rel='noreferrer' >
+                                        <button className="w-full bg-gray-800 text-2xl rounded-lg p-3 flex justify-center items-center">
+                                            PREORDER NOW
+                                        </button></Link>
+                                )}
+                            </div>
+                        </div>
                     </div>
-                    <div className="flex flex-col gap-4 justify-between">
-                        <div className="text-gray-700">Rs. 195/-</div>
-                        <button className="bg-gray-800 text-2xl rounded-lg p-3 flex justify-center items-center">
-                            PREORDER NOW
-                        </button>
-                    </div>
                 </div>
-            </div>
-        </div> 
 
             </div>
 

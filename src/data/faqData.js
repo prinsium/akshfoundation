@@ -2,38 +2,32 @@ export const faqData = [
 
     {
       id: 1,
-      question: 'Who is Astro Arun Trivedi?',
-      answer: 'Astro Arun Trivedi is an Indain Vedic Astrologer, Kundali Expert and Pandit Ji who has been making an impact in lives of people with his knowledge of astrology. To know more tap in about section.'
+      question: 'What is AKSH Foundation?',
+      answer: 'AKSH Foundation is an online education company'
     },
   
     {
       id: 2,
-      question: 'How can I talk to Astro Arun Trivedi?',
-      answer: "Tap on whatsapp icon to start chat with Astro Arun Trivedi (Timings: 24x7). You can also call on +91 6392878246 (Timings: 8:00-10:00 AM & 8:00-9:00 PM Daily)"
+      question: 'What are the programs offered by AKSH Foundation?',
+      answer: "Various Programs like SSC, UPSC, IBPS etc"
     },
   
     {
       id: 3,
-      question: 'When to talk to Astro Arun Trivedi?',
-      answer: "Whatsapp Chat Timings: 24x7 Phone Call Timings: 8:00-10:00 AM & 8:00-9:00 PM"
+      question: 'How can I enroll in the courses?',
+      answer: "In the course section just tap on 'More Details'. Fill the form. Make Payment. Share Payment done screenshot on Whatsapp"
     },
   
     {
       id: 4,
       question: 'What if my call is not picked-up?',
-      answer: "Sometimes Astro Arun Trivedi can not reply due to his busy schedule, but you can always call after sometime during the call timings."
+      answer: "It happens sometimes, you can always again."
     },
   
     {
       id: 5,
-      question: 'What services does Astro Arun Trivedi offer?',
-      answer: "Astro Arun Trivedi provides many kind of services including Hand-Made Kundali, Kundali Matching, Couple Marriage, and different kinds of pujas & hawans, all can be seen from services section"
-    },
-  
-    {
-      id: 6,
-      question: "Does Astro Arun Trivedi also do 'Puja & Hawan'?",
-      answer: "Yes, Astro Arun Trivedi also do different Kinds of pujas like Navratra Puja, Rudrabhishek, Bhoomi Pujan, Grih Pravesh etc"
+      question: 'Is there any app I can download?',
+      answer: "Learning AKSH available on PLAY Store (or) Tap on Download button in APP section."
     },
   
   ]

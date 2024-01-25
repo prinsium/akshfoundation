@@ -73,7 +73,7 @@ export default function Navbar() {
             onClick={() => scrollToSection("homepage")}
             className="flex justify-start items-center cursor-pointer"
           >
-            <div className="text-gray-700 text-lg font-semibold">
+            <div className="text-gray-800 text-lg font-semibold">
               <Image src="/assets/aksh.svg" width={200} height={40} />
             </div>
           </div>
@@ -110,7 +110,7 @@ export default function Navbar() {
 
           <div className='md:hidden flex relative'>
 
-            <div className='flex'>
+            <div className='flex fixed top-4 right-2 z-20'>
               <button onClick={openModal} className="text-gray-800 p-2 rounded-full">
                 {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />

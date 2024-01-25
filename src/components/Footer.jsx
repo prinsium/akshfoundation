@@ -54,9 +54,9 @@ export default function Footer() {
                             </Link>
                         )}
 
-                        {urlData.facebook && (
-                            <Link href={urlData.facebook} target='_blank' rel='noreferrer' >
-                                <svg className="stroke-[#ffffff] stroke-2 transition ease-in-out delay-150 hover:bg-indigo-600 rounded-full p-1 duration-300" xmlns="http://www.w3.org/2000/svg" height="40" width="40" viewBox="0 0 64 64" fill="none"><path d="M37.49 19.86c0-.07.36-.3 1.51-.3h3.76A2.21 2.21 0 0045 17.34h0v-6.56a2.22 2.22 0 00-2.19-2.26h-5.6a11.47 11.47 0 00-8.43 3.28 12 12 0 00-3.19 8.64v5.95h-4.35A2.23 2.23 0 0019 28.61v7.07a2.21 2.21 0 002.21 2.21h4.28v15.35a2.22 2.22 0 002.18 2.25h7.35a2.21 2.21 0 002.21-2.22h0V37.94h5.23a2.23 2.23 0 002.22-2.22v-7.08a2.21 2.21 0 00-2.22-2.21h-5.2v-5.21a2.44 2.44 0 01.23-1.36z" stroke-linecap="round"></path></svg>
+                        {urlData.telegram && (
+                            <Link href={urlData.telegram} target='_blank' rel='noreferrer' >
+                                <svg className="stroke-[#ffffff] stroke-2 transition ease-in-out delay-150 hover:bg-indigo-600 rounded-full p-1 duration-300" xmlns="http://www.w3.org/2000/svg" height="40" width="40" viewBox="0 0 64 64" fill="none"><path d="M26.67 38.57l-.82 11.54A2.88 2.88 0 0028.14 49l5.5-5.26 11.42 8.35c2.08 1.17 3.55.56 4.12-1.92l7.49-35.12h0c.66-3.09-1.08-4.33-3.16-3.55l-44 16.85C6.47 29.55 6.54 31.23 9 32l11.26 3.5 25.33-14.79c1.23-.83 2.36-.37 1.44.44z" stroke-linecap="round"></path></svg>
                             </Link>
                         )}
 
