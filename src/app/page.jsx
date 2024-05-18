@@ -1,33 +1,34 @@
-import Courses from '@/components/Courses';
-import './globals.css'
-import HomePage from "@/components/HomePage";
-import Books from '@/components/Books';
-import FAQs from '@/components/FAQs';
-import Testimonials from '@/components/Testimonials';
-import App from '@/components/App';
+import "./globals.css";
+import Books from "@/components/Books";
+import FAQs from "@/components/FAQs";
+import Testimonials from "@/components/Testimonials";
+import App from "@/components/App";
+import Mainpage from "@/components/Mainpage";
+import Course from "@/components/Course";
 
 export default function Home() {
   return (
-    <div className='p-2 md:p-8'>
-    <div id="homepage">
-    <HomePage />
-    </div>
+    <>
+      <div id="homepage">
+        <Mainpage />
+      </div>
 
-    <div id="courses">
-    <Courses />
-    </div>
+      <div className="p-2 md:p-8">
+        <div id="courses">
+          <Course />
+        </div>
 
-    <div id="books">
-    <Books />
-    </div>
+        <div id="books">
+          <Books />
+        </div>
 
-    <div id="app">
-    <App />
-    </div>
+        <div id="app">
+          <App />
+        </div>
 
-    <Testimonials />
-    <FAQs />
-    </div>
-    
+        <Testimonials />
+        <FAQs />
+      </div>
+    </>
   );
 }

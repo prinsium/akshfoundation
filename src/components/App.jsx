@@ -52,8 +52,8 @@ export default function App() {
   return (
     <div className="mx-auto mt-24">
       <div>
-        <h3 className="text-gray-800 text-4xl font-bold text-center">Download Our Mobile App</h3>
-        <p className="text-gray-700 text-xl font-normal text-center">Learning Aksh App for exam prepration</p>
+        <h2>Download Our Mobile App</h2>
+        <p className="text-xl font-normal text-center">Learning Aksh App for exam prepration</p>
       </div>
       <div className="flex flex-row justify-between">
         <Lottie animationData={arrow} style={style} interactivity={interactivity} />
@@ -71,7 +71,7 @@ export default function App() {
 
       <div className="flex justify-center items-center">
         <div className={`w-fit h-fit flex justify-center items-center transition ease-in-out delay-150 ${isZoomed ? 'transition duration-700 scale-125' : 'scale-0'}`} ref={ref}>
-          <Image src="/assets/appImg.png" width={300} height={300} alt="APP" />
+          <Image src="/assets/apim.png" width={300} height={300} alt="APP" />
         </div>
       </div>
 

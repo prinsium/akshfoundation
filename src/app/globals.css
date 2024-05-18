@@ -20,12 +20,62 @@ body {
   color: rgb(var(--foreground-rgb));
   background: rgb(233, 240, 255);
   background: linear-gradient(90deg, rgba(233, 240, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(246, 255, 234, 1) 100%);
+  content: "";
+  background-image: url("/grid.svg");
+}
+
+.abril {
+  font-size: 5vw;
+  line-height: normal;
+  font-family: "Abril Fatface", serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 
-h1,
+h1{
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-size: 5vw;
+  font-weight: 400;
+  font-style: normal;
+}
+
 h2 {
-  font-family: 'Bakbak One', sans-serif;
+  font-family: "Kode Mono", monospace;
+  color: black;
+  font-optical-sizing: auto;
+  font-size: 5vw;
+  font-weight: 500;
+  text-align: center;
+  font-style: normal;
+}
+
+h3{
+  font-family: "Kode Mono", monospace;
+  color: black;
+  font-optical-sizing: auto;
+  font-size: 5vw;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h6{
+  /* font-family: "Kode Mono", monospace; */
+  color: black;
+  font-optical-sizing: auto;
+  font-size: 1vw;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p{
+  /* font-family: "Kode Mono", monospace; */
+  color: black;
+  font-optical-sizing: auto;
+  font-size: 1vw;
+  font-weight: 400;
+  font-style: normal;
 }
 
 @layer utilities {
@@ -33,3 +83,23 @@ h2 {
     text-wrap: balance;
   }
 }
+
+@media (max-width: 400px) {
+  
+  .abril {
+    font-size: 2.4rem;
+  }
+  
+  h1{
+    font-size: 10vw;
+  }
+
+  h2{
+    font-size: 2rem;
+  }
+
+  h6, p{
+    font-size: 5vw;
+  }
+ 
+  }

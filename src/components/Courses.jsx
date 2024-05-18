@@ -51,8 +51,7 @@ export default function Courses() {
     <div className='flex flex-col mb-24 justify-center'>
 
       <div>
-        <h3 className="text-gray-800 text-4xl font-extrabold text-center mb-24">
-          OUR SPECIAL PROGRAMS FOR YOUR <span className='border-4 border-dashed border-gray-800 rounded-lg bg-[#00DFA2] p-1 my-4'>EDUCATION</span></h3>
+        <h3>EXPLORE OUR PROGRAMS</h3>
       </div>
       <div className={`mx-auto mt-24 gap-4 lg:mt-0 flex justify-center ${isWideScreen ? 'flex-row' : 'flex-col lg:h-2/3'}`}>
 

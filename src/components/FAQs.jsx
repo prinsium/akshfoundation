@@ -11,8 +11,8 @@ export default function FAQs() {
   };
 
   return (
-    <div className="max-w-5xl mx-auto mt-24 mb-16">
-      <h2 className='text-4xl font-bold text-gray-800 flex justify-center mb-4'>FAQs</h2>
+    <div className="max-w-5xl mx-auto mt-24">
+      <h2>FAQs</h2>
       {faqData.map((faq, index) => (
         <div key={faq.id} className="p-6 mb-1 mx-2 bg-gray-100 rounded-lg border-2 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10">
           {/* Question */}
@@ -20,7 +20,7 @@ export default function FAQs() {
             className="flex items-center justify-between cursor-pointer"
             onClick={() => toggleAccordion(index)}
           >
-            <h3 className="mb-2 text-lg text-gray-700 font-medium">{faq.question}</h3>
+            <h6>{faq.question}</h6>
             <div className='w-8 h-8 flex justify-end'>
             <svg
               className={`w-5 h-5 transition-transform transform ${activeIndex === index ? 'rotate-45' : 'rotate-0'

@@ -26,6 +26,9 @@ module.exports = {
           },
         },
       },
+      scale: {
+        '-100': '-1',
+    },
     },
   },
   plugins: [],

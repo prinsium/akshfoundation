@@ -23,5 +23,5 @@ export const courseData = {
     desc4: 'RAPC & SSC JHT 2023 (Paper 1 & Paper 2)',
     mode4: 'online',
     link4: '',
-    course4link: '',
+    course4link: 'https://forms.gle/tKMitBifxLc1FnPU8',
 }
