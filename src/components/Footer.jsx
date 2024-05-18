@@ -52,10 +52,17 @@ export default function Footer() {
           </Link>
 
           <Link
-            href={`tel:${urlData.phone}`}
+            href={`tel:${urlData.phone1}`}
             className="text-[#B6BBC4] text-xl sm:text-3xl font-medium"
           >
-            {urlData.phone}
+            {urlData.phone1}
+          </Link>
+
+          <Link
+            href={`tel:${urlData.phone2}`}
+            className="text-[#B6BBC4] text-xl sm:text-3xl font-medium"
+          >
+            {urlData.phone2}
           </Link>
 
           <div className="flex flex-row justify-between mt-2">

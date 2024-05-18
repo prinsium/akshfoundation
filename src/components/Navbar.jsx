@@ -191,10 +191,17 @@ export default function Navbar() {
                       </Link>
 
                       <Link
-                        href={`tel:${urlData.phone}`}
+                        href={`tel:${urlData.phone1}`}
                         className="text-gray-800 text-lg sm:text-2xl font-medium"
                       >
-                        {urlData.phone}
+                        {urlData.phone1}
+                      </Link>
+
+                      <Link
+                        href={`tel:${urlData.phone2}`}
+                        className="text-gray-800 text-lg sm:text-2xl font-medium"
+                      >
+                        {urlData.phone2}
                       </Link>
                     </div>
                   </div>
