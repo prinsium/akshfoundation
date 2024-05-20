@@ -1,7 +1,7 @@
 export default function Testimonials() {
   const items = [
     {
-      name: "Anshuman, Privadarshi",
+      name: "Anshuman Priyadarshi",
       body: "an excelent app for test series and video classes",
     },
     {
