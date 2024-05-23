@@ -1,7 +1,7 @@
 export default function sitemap() {
     return [
       {
-        url: 'https://akshfoundation.com',
+        url: 'https://akshfoundation.org',
         lastModified: new Date(),
         changeFrequency: 'daily',
         priority: 1,
