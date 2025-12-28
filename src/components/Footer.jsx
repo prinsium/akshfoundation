@@ -186,7 +186,7 @@ export default function Footer() {
       <div className="flex flex-row justify-between">
         <p className="text-[#B6BBC4] text-xs sm:text-sm md:text-md lg:text-lg">
           {" "}
-          AKSH Foundation &copy; 2024
+          AKSH Foundation &copy; 2025
         </p>
         <p className="text-[#B6BBC4] text-xs sm:text-sm md:text-md lg:text-lg">
           Developed by{" "}
