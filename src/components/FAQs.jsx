@@ -1,6 +1,5 @@
 "use client";
 import { faqData } from '@/data/faqData';
-
 import React, { useState } from 'react';
 
 export default function FAQs() {
@@ -11,10 +10,10 @@ export default function FAQs() {
   };
 
   return (
-    <div className="max-w-5xl mx-auto mt-24">
-      <h2>FAQs</h2>
+    <div className="max-w-3xl mx-auto mt-24">
+      <h2 className="mb-12 text-center">FAQs</h2>
       {faqData.map((faq, index) => (
-        <div key={faq.id} className="p-6 mb-1 mx-2 bg-gray-100 rounded-lg border-2 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10">
+        <div key={faq.id} className="p-4 mb-2 mx-2 border-1 border-[#f1f1f1] rounded-2xl border-2 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10">
           {/* Question */}
           <div
             className="flex items-center justify-between cursor-pointer"
@@ -43,7 +42,7 @@ export default function FAQs() {
 
           {/* Answer */}
           {activeIndex === index && (
-            <p className="mt-2 text-gray-600">{faq.answer}</p>
+            <p className="mt-2 text-gray-400">{faq.answer}</p>
           )}
         </div>
       ))}

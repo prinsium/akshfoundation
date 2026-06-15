@@ -1,22 +1,41 @@
+"use client"
+
 import Image from "next/image";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 
 export default function Mainpage() {
+
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+
+    if (section) {
+      section.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+    }
+  };
+
+
   return (
-    <div className="min-h-screen bg-transparent text-gray-950 flex flex-col overflow-x-hidden">
+    <>
+
+    <div className="min-h-[85vh] bg-transparent text-gray-950 flex flex-row md:flex-col overflow-x-hidden">
       
       {/* Hero Section */}
-      <div className="flex-grow flex items-center max-w-7xl mx-auto w-full p-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center w-full">
+      <div className="flex-grow flex items-center max-w-7xl mx-auto w-full mt-24 p-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 items-center w-full">
           {/* Left Column: Text and Buttons */}
-          <div className="flex flex-col items-start gap-12">
-            <h1>
+          <div className="flex flex-col items-center md:items-start gap-6 md:gap-12">
+            <h1 className="text-4xl md:text-5xl font-bold text-center md:text-left">
               Boost Your Digital Education With Perfect Learning
             </h1>
 
             {/* Primary Start Button */}
-            <div className="flex items-center gap-2">
-              <div className="bg-gray-800 p-3.5 rounded-full flex items-center justify-center">
+            <div onClick={() => scrollToSection("courses")} className="flex items-center gap-2">
+              <div className="bg-gray-800 p-3.5 rounded-full flex items-center justify-center hover:bg-gray-700 hover:rotate-45 hover:shadow-lg transition-transform duration-300 cursor-pointer">
                 <svg 
                   xmlns="http://www.w3.org/2000/svg" 
                   fill="none" 
@@ -28,7 +47,7 @@ export default function Mainpage() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
                 </svg>
               </div>
-              <button className="bg-gray-800 text-white px-8 py-3 rounded-full font-medium text-lg hover:bg-gray-700 transition">
+              <button className="bg-gray-800 text-white px-8 py-3 rounded-full font-medium text-lg hover:bg-gray-700 hover:shadow-lg hover:-translate-y-1 transition cursor-pointer">
                 Start Learning
               </button>
             </div>
@@ -57,7 +76,7 @@ export default function Mainpage() {
               </div>
 
               {/* Side Play Button */}
-              <div className="border border-gray-300 bg-gray-200 p-4.5 rounded-xl flex items-center justify-center">
+              <div onClick={() => scrollToSection("testimonials")} className="border border-gray-300 bg-gray-200 p-4.5 rounded-xl flex items-center justify-center hover:bg-gray-300 transition cursor-pointer">
                 <svg 
                   xmlns="http://www.w3.org/2000/svg" 
                   fill="none" 
@@ -82,8 +101,9 @@ export default function Mainpage() {
           </div>
         </div>
       </div>
+    </div>
 
-      {/* Marquee Section */}
+     {/* Marquee Section */}
       <div className="w-full bg-gray-800 shadow-indigo-400 shadow-2xl py-4 overflow-hidden flex">
         {/* Container 1 */}
         <div className="animate-marquee flex items-center gap-8 text-white whitespace-nowrap pr-8">
@@ -129,7 +149,6 @@ export default function Mainpage() {
           <Image src='/star.svg' width={40} height={40} alt="star" className="w-10 h-10" />
         </div>
       </div>
-
-    </div>
+      </>
   );
 }

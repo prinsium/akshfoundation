@@ -26,8 +26,13 @@ export default function Home() {
           <App />
         </div>
 
-        <Testimonials />
-        <FAQs />
+        <div id="testimonials">
+          <Testimonials />
+        </div>
+
+        <div id="faqs">
+          <FAQs />
+        </div>
       </div>
     </>
   );

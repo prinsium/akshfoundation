@@ -103,16 +103,17 @@ export default function Testimonials() {
             // Front Card
             transformClasses = "rotate-0 scale-100 opacity-100 translate-y-0";
             zIndex = 30;
+            borderColor = "border-[#f1f1f1]";
           } else if (diff === 1) {
             // Second Card (Rotated 3 degrees)
             transformClasses = "rotate-3 scale-[0.98] opacity-100 translate-y-2";
             zIndex = 20;
-            borderColor = "border-[#9d8989]"; // Match your image's background card color
+            borderColor = "border-[#f1f1f1]"; // Match your image's background card color
           } else if (diff === 2) {
             // Third Card (Rotated -3 degrees)
             transformClasses = "-rotate-3 scale-[0.96] opacity-100 translate-y-4";
             zIndex = 10;
-            borderColor = "border-[#9d8989]"; // Match your image's background card color
+            borderColor = "border-[#f1f1f1]"; // Match your image's background card color
           } else {
             // Hidden Cards (Waiting to cycle in)
             transformClasses = "rotate-0 scale-90 opacity-0 translate-y-8";

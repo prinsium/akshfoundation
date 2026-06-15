@@ -22,6 +22,20 @@ export const courseData = {
     course4: 'SSC',
     desc4: 'RAPC & SSC JHT 2023 (Paper 1 & Paper 2)',
     mode4: 'online',
-    link4: '',
+    price4: '999/-', // Added fallback price
     course4link: 'https://forms.gle/tKMitBifxLc1FnPU8',
+
+    // New Course 5
+    course5: 'HINDI',
+    desc5: 'Hindi Grammar & Literature',
+    mode5: 'online',
+    price5: '699/-',
+    course5link: 'https://learningaksh.com/tests/1069/hindi-grammar---literature',
+
+    // New Course 6
+    course6: 'SSC',
+    desc6: 'SSC Hindi Pradhyapak',
+    mode6: 'online',
+    price6: '699/-',
+    course6link: 'https://learningaksh.com/tests/890/ssc-hindi-pradhyapak',
 }
