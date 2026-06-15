@@ -29,7 +29,7 @@ export default function Mainpage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 items-center w-full">
           {/* Left Column: Text and Buttons */}
           <div className="flex flex-col items-center md:items-start gap-6 md:gap-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-center md:text-left">
+            <h1 className="text-3xl md:text-4xl font-bold text-center md:text-left">
               Boost Your Digital Education With Perfect Learning
             </h1>
 
