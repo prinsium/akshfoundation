@@ -25,11 +25,11 @@ export default function Mainpage() {
     <div className="min-h-[85vh] bg-transparent text-gray-950 flex flex-row md:flex-col overflow-x-hidden">
       
       {/* Hero Section */}
-      <div className="flex-grow flex items-center max-w-7xl mx-auto w-full mt-24 p-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 items-center w-full">
+      <div className="flex-grow flex items-center max-w-7xl mx-auto w-full mt-24 p-4 md:pd-8 lg:p-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-12 items-center w-full">
           {/* Left Column: Text and Buttons */}
-          <div className="flex flex-col items-center md:items-start gap-6 md:gap-12">
-            <h1 className="text-3xl md:text-4xl font-bold text-center md:text-left">
+          <div className="flex flex-col items-center items-center lg:items-start gap-6 md:gap-12">
+            <h1 className="text-3xl md:text-4xl font-bold text-center text-center lg:text-left">
               Boost Your Digital Education With Perfect Learning
             </h1>
 
@@ -92,7 +92,7 @@ export default function Mainpage() {
           </div>
 
           {/* Right Column: Illustration */}
-          <div className="flex justify-center md:justify-end">
+          <div className="block md:hidden lg:block flex justify-center md:justify-end">
             <img
               src="/assets/studying.svg"
               alt="illustration of a student reading a book"

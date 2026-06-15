@@ -108,7 +108,7 @@ export default function Course() {
         })}
       </div>
 
-      <div className="max-w-full flex justify-center items-center mt-24 mx-auto md:mx-24 xl:mx-auto px-4">
+      <div className="max-w-7xl flex justify-center items-center mt-24 mx-auto md:mx-24 xl:mx-auto px-4">
         <h2 className="w-full text-3xl md:text-4xl font-bold text-gray-800 text-center">
           UNLOCK YOUR FULL POTENTIAL WITH OUR EASY TO USE PROGRAMS
         </h2>
